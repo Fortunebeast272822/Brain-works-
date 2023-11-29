@@ -1,35 +1,42 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
 }
 
 .container {
     text-align: center;
+    margin: 50px;
 }
 
-.instagram-btn {
-    display: inline-block;
+h1 {
+    color: #333;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.vote-btn, .instagram-btn {
     background-color: #405de6;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
+    cursor: pointer;
 }
 
-.instagram-btn:hover {
+.vote-btn:hover, .instagram-btn:hover {
     background-color: #3f50b5;
 }
-
-.icon {
-    background: url('instagram-icon.png') no-repeat;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
